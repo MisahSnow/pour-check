@@ -948,6 +948,12 @@ footer {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .ad-banner-top {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .ad-banner {
     padding: 0 16px;
