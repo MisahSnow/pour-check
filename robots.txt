@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pour-check-rutpajjk.devinapps.com/sitemap.xml
