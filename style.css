@@ -900,3 +900,61 @@ footer {
     padding: 24px 16px 48px;
   }
 }
+
+/* ============ AD BANNERS ============ */
+.ad-banner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.ad-banner-top {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.ad-banner-bottom {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.ad-container {
+  background: var(--black-light);
+  border: 1px solid var(--gray-dark);
+  border-radius: var(--radius);
+  padding: 12px;
+  text-align: center;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-container::before {
+  content: 'SPONSORED';
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--gray);
+  opacity: 0.5;
+}
+
+.ad-container ins {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .ad-banner {
+    padding: 0 16px;
+  }
+
+  .ad-container {
+    min-height: 60px;
+    padding: 8px;
+  }
+}
